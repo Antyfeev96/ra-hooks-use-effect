@@ -1,9 +1,12 @@
 import './App.scss';
+import Details from './Components/Details/Details';
+import List from './Components/List/List';
 
 export default function App() {
   return (
-    <div>
-      123
+    <div className="app">
+      <List />
+      <Details />
     </div>
   );
 }
