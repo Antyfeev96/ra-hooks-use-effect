@@ -1,3 +1,6 @@
 .list {
   width: 50%;
+  & :nth-child(n + 2) {
+    margin-top: 15px;
+  }
 }
