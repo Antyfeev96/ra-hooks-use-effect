@@ -1,12 +1,41 @@
+import { useState, useEffect } from 'react';
 import './App.scss';
 import Details from './Components/Details/Details';
 import List from './Components/List/List';
 
 export default function App() {
+  const [details, setDetails] = useState({
+    id: null,
+    name: 'name',
+    avatar: '#',
+    details: {
+      city: 'city',
+      company: 'company',
+      position: 'position'
+    }
+  })
+
+  const changeUser = (newUser) => {
+    setDetails(async (prev) => {
+      if (prev.id === newUser.id) return {...prev};
+      try {
+        const response = await fetch(`${process.env.REACT_APP_NEWS_URL}/${newUser.id}.json`);
+        if (!response.ok) {
+          throw new Error(response.statusText);
+        }
+        const result = await response.json();
+        console.log('Details получены', result);
+        setDetails(result);       
+      } catch (e) {
+        console.error(e)
+      }
+    });
+  }
+
   return (
     <div className="app">
-      <List />
-      <Details />
+      <List changeUser={changeUser} />
+      <Details {...details} />
     </div>
   );
 }
