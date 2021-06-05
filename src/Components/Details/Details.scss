@@ -1,0 +1,24 @@
+.details  {
+  box-sizing: border-box;
+  height: fit-content;
+  width: 300px;
+  text-transform: capitalize;
+
+  & div:first-of-type {
+    font-size: 1.4em;
+  }
+
+  & img {
+    box-sizing: border-box;
+    vertical-align: bottom;
+  }
+
+  & div:nth-of-type(n) {
+    padding: 15px;
+    border: 1px solid rgb(192, 189, 189);
+  }
+
+  & div:nth-of-type(n + 2) {
+    border-top: none;
+  }
+}

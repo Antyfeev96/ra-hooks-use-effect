@@ -32,9 +32,10 @@ export default function List(props) {
         setLoading(false);
       }
     }
-    const timeoutId = setTimeout(async () => await fetchList(), 3000)
-    return () => clearTimeout(timeoutId);
-  }, [list]);
+    fetchList();
+    // const timeoutId = setTimeout(async () => await fetchList(), 3000)
+    // return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <div className="list">
