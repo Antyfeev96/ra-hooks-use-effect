@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ra-hooks-use-effect/static/css/main.cc759b2d.chunk.css",
+    "main.css": "/ra-hooks-use-effect/static/css/main.8d3a0a51.chunk.css",
     "main.js": "/ra-hooks-use-effect/static/js/main.942b2175.chunk.js",
     "main.js.map": "/ra-hooks-use-effect/static/js/main.942b2175.chunk.js.map",
     "runtime-main.js": "/ra-hooks-use-effect/static/js/runtime-main.f8795910.js",
@@ -10,13 +10,13 @@
     "static/js/3.30b3a950.chunk.js": "/ra-hooks-use-effect/static/js/3.30b3a950.chunk.js",
     "static/js/3.30b3a950.chunk.js.map": "/ra-hooks-use-effect/static/js/3.30b3a950.chunk.js.map",
     "index.html": "/ra-hooks-use-effect/index.html",
-    "static/css/main.cc759b2d.chunk.css.map": "/ra-hooks-use-effect/static/css/main.cc759b2d.chunk.css.map",
+    "static/css/main.8d3a0a51.chunk.css.map": "/ra-hooks-use-effect/static/css/main.8d3a0a51.chunk.css.map",
     "static/js/2.b197a2c3.chunk.js.LICENSE.txt": "/ra-hooks-use-effect/static/js/2.b197a2c3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f8795910.js",
     "static/js/2.b197a2c3.chunk.js",
-    "static/css/main.cc759b2d.chunk.css",
+    "static/css/main.8d3a0a51.chunk.css",
     "static/js/main.942b2175.chunk.js"
   ]
 }
